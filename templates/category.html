@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2 class="category-title" id="page-title">{{ category.name.en }}</h2>
+
+    <div class="product-grid">
+        {% if category.subcategories %}
+        {% for sub in category.subcategories %}
+        <a href="/category/{{ sub.id }}" class="product-card subcategory-card">
+            <div class="product-image">
+                <div class="img-placeholder">{{ sub.name.en[0] }}</div>
+            </div>
+            <div class="product-info">
+                <h3 class="item-name" data-id="{{ sub.id }}">{{ sub.name.en }}</h3>
+            </div>
+        </a>
+        {% endfor %}
+        {% elif category['items'] %}
+        {% for item in category['items'] %}
+        {% if category.type == 'service' %}
+        <!-- Service Profile Card -->
+        <!-- Service Profile Card -->
+        <div class="product-card profile-card" onclick="openProductDetails('{{ item.id }}')">
+            <div class="product-image profile-image">
+                <div class="img-placeholder">{{ item.name.en[0] }}</div>
+            </div>
+            <div class="product-info">
+                <h3 class="item-name" data-id="{{ item.id }}">{{ item.name.en }}</h3>
+                <div class="profile-details">
+                    <p><strong data-key="settings.cart_labels.experience">Experience</strong>: <span class="exp-text">{{
+                            item.experience.en }}</span></p>
+                    <p><strong data-key="settings.cart_labels.rating">Rating</strong>: ⭐ {{ item.rating }}</p>
+                    <p class="expertise">{{ item.expertise.en }}</p>
+                </div>
+                <p class="price">৳{{ item.price }} {% if item.unit %}/ {{ item.unit }}{% endif %}</p>
+                <button class="add-to-cart-btn hire-btn"
+                    onclick="event.stopPropagation(); addToCart('{{ item.id }}', '{{ item.name.en }}', '{{ item.name.bn }}', {{ item.price }})"
+                    data-key="settings.cart_labels.hire">Hire Now</button>
+            </div>
+        </div>
+        {% else %}
+        <!-- Standard Product Card -->
+        <div class="product-card" onclick="openProductDetails('{{ item.id }}')">
+            <div class="product-image">
+                {% if item.image %}
+                <img src="{{ url_for('static', path=item.image) }}" alt="{{ item.name.en }}" class="card-img">
+                {% else %}
+                <div class="img-placeholder">{{ item.name.en[0] }}</div>
+                {% endif %}
+                {% if item.original_price and item.original_price > item.price %}
+                <span class="card-discount-badge">Sale</span>
+                {% endif %}
+            </div>
+            <div class="product-info">
+                <h3 class="item-name" data-id="{{ item.id }}">{{ item.name.en }}</h3>
+
+                {% if item.rating %}
+                <div class="card-rating">
+                    <span class="stars">★</span> {{ item.rating }} <span class="review-count">({{ item.reviews_count
+                        }})</span>
+                </div>
+                {% endif %}
+
+                <div class="price-row">
+                    <p class="price">৳{{ item.price }} {% if item.unit %}/ {{ item.unit }}{% endif %}</p>
+                    {% if item.original_price %}
+                    <p class="original-price-sm">৳{{ item.original_price }}</p>
+                    {% endif %}
+                </div>
+
+                <button class="add-to-cart-btn"
+                    onclick="event.stopPropagation(); addToCart('{{ item.id }}', '{{ item.name.en }}', '{{ item.name.bn }}', {{ item.price }})"
+                    data-key="settings.cart_labels.add_to_cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>
+
+<script>
+    // Pass category data to JS for dynamic language switching on this page specific elements if needed
+    const currentCategory = {{ category | tojson }};
+</script>
+{% endblock %}

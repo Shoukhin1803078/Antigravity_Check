@@ -1,0 +1,869 @@
+{
+    "settings": {
+        "title": {
+            "en": "E Mart",
+            "bn": "ই মার্ট"
+        },
+        "nav": {
+            "home": {
+                "en": "Home",
+                "bn": "হোম"
+            },
+            "homeservice": {
+                "en": "Homeservice",
+                "bn": "হোম সার্ভিস"
+            },
+            "grocery": {
+                "en": "Grocery Item",
+                "bn": "মুদি আইটেম"
+            },
+            "cart": {
+                "en": "Cart",
+                "bn": "কার্ট"
+            },
+            "back": {
+                "en": "Back",
+                "bn": "পেছনে"
+            }
+        },
+        "cart_labels": {
+            "add_to_cart": {
+                "en": "Add to Cart",
+                "bn": "কার্টে যোগ করুন"
+            },
+            "hire": {
+                "en": "Hire Now",
+                "bn": "হায়ার করুন"
+            },
+            "remove": {
+                "en": "Remove",
+                "bn": "সরান"
+            },
+            "total": {
+                "en": "Total",
+                "bn": "মোট"
+            },
+            "checkout": {
+                "en": "Checkout",
+                "bn": "চেকআউট"
+            },
+            "price": {
+                "en": "Price",
+                "bn": "দাম"
+            },
+            "experience": {
+                "en": "Experience",
+                "bn": "অভিজ্ঞতা"
+            },
+            "rating": {
+                "en": "Rating",
+                "bn": "রেটিং"
+            }
+        }
+    },
+    "categories": [
+        {
+            "id": "homeservice",
+            "name": {
+                "en": "Homeservice",
+                "bn": "হোম সার্ভিস"
+            },
+            "subcategories": [
+                {
+                    "id": "cylinder",
+                    "name": {
+                        "en": "Cylinder",
+                        "bn": "সিলিন্ডার"
+                    },
+                    "items": [
+                        {
+                            "id": "cyl_1",
+                            "name": {
+                                "en": "12kg Gas Cylinder",
+                                "bn": "১২ কেজি গ্যাস সিলিন্ডার"
+                            },
+                            "price": 1200,
+                            "original_price": 1350,
+                            "rating": 4.8,
+                            "reviews_count": 124,
+                            "brand": {
+                                "en": "Bashundhara",
+                                "bn": "বসুন্ধরা"
+                            },
+                            "delivery_time": {
+                                "en": "1 Hour",
+                                "bn": "১ ঘণ্টা"
+                            },
+                            "short_description": {
+                                "en": "Safe and durable LP gas cylinder for home cooking.",
+                                "bn": "রান্নার জন্য নিরাপদ এবং টেকসই এলপি গ্যাস সিলিন্ডার।"
+                            },
+                            "image": "images/homeservice/cylinder/cylinder.jpeg",
+                            "url": "/category/cylinder/product/cyl_1"
+                        },
+                        {
+                            "id": "cyl_2",
+                            "name": {
+                                "en": "Refill Gas Cylinder",
+                                "bn": "সিলিন্ডার রিফিল"
+                            },
+                            "price": 850,
+                            "rating": 4.9,
+                            "reviews_count": 89,
+                            "brand": {
+                                "en": "Generic",
+                                "bn": "সাধারণ"
+                            },
+                            "delivery_time": {
+                                "en": "45 Mins",
+                                "bn": "৪৫ মিনিট"
+                            },
+                            "short_description": {
+                                "en": "Quick refill service for your empty cylinder.",
+                                "bn": "আপনার খালি সিলিন্ডারের জন্য দ্রুত রিফিল সার্ভিস।"
+                            },
+                            "image": "images/homeservice/cylinder/cylinder_refill.jpg",
+                            "url": "/category/cylinder/product/cyl_2"
+                        }
+                    ]
+                },
+                {
+                    "id": "home_accessories",
+                    "name": {
+                        "en": "Home Accessories",
+                        "bn": "ঘর সাজানোর সামগ্রী"
+                    },
+                    "items": [
+                        {
+                            "id": "fan_1",
+                            "name": {
+                                "en": "Ceiling Fan",
+                                "bn": "সিলিং ফ্যান"
+                            },
+                            "price": 2500,
+                            "original_price": 2800,
+                            "rating": 4.5,
+                            "reviews_count": 56,
+                            "brand": {
+                                "en": "BRB",
+                                "bn": "বিআরবি"
+                            },
+                            "delivery_time": {
+                                "en": "2 Days",
+                                "bn": "২ দিন"
+                            },
+                            "short_description": {
+                                "en": "High speed ceiling fan with 5 star energy rating.",
+                                "bn": "৫ স্টার এনার্জি রেটিং সহ হাই স্পিড সিলিং ফ্যান।"
+                            },
+                            "image": "images/homeservice/home_accessories/fan.jpeg",
+                            "url": "/category/home_accessories/product/fan_1"
+                        },
+                        {
+                            "id": "fan_2",
+                            "name": {
+                                "en": "Table Fan",
+                                "bn": "টেবিল ফ্যান"
+                            },
+                            "price": 1500,
+                            "rating": 4.2,
+                            "reviews_count": 34,
+                            "brand": {
+                                "en": "Walton",
+                                "bn": "ওয়ালটন"
+                            },
+                            "delivery_time": {
+                                "en": "2 Days",
+                                "bn": "২ দিন"
+                            },
+                            "short_description": {
+                                "en": "Portable table fan for personal cooling.",
+                                "bn": "ব্যক্তিগত ব্যবহারের জন্য পোর্টেবল টেবিল ফ্যান।"
+                            },
+                            "image": "images/homeservice/home_accessories/table_fan.jpg",
+                            "url": "/category/home_accessories/product/fan_2"
+                        },
+                        {
+                            "id": "light_1",
+                            "name": {
+                                "en": "LED Light",
+                                "bn": "এলইডি লাইট"
+                            },
+                            "price": 300,
+                            "original_price": 350,
+                            "rating": 4.7,
+                            "reviews_count": 210,
+                            "brand": {
+                                "en": "Philips",
+                                "bn": "ফিলিপস"
+                            },
+                            "delivery_time": {
+                                "en": "1 Day",
+                                "bn": "১ দিন"
+                            },
+                            "short_description": {
+                                "en": "Bright white LED light, energy saving.",
+                                "bn": "উজ্জ্বল সাদা এলইডি লাইট, বিদ্যুৎ সাশ্রয়ী।"
+                            },
+                            "image": "images/homeservice/home_accessories/light.jpg",
+                            "url": "/category/home_accessories/product/light_1"
+                        },
+                        {
+                            "id": "light_2",
+                            "name": {
+                                "en": "Tube Light",
+                                "bn": "টিউব লাইট"
+                            },
+                            "price": 350,
+                            "rating": 4.4,
+                            "reviews_count": 45,
+                            "brand": {
+                                "en": "Transtec",
+                                "bn": "ট্রান্সটেক"
+                            },
+                            "delivery_time": {
+                                "en": "1 Day",
+                                "bn": "১ দিন"
+                            },
+                            "short_description": {
+                                "en": "Long lasting tube light for room illumination.",
+                                "bn": "ঘরের আলোর জন্য দীর্ঘস্থায়ী টিউব লাইট।"
+                            },
+                            "image": "images/homeservice/home_accessories/tube_light.jpg",
+                            "url": "/category/home_accessories/product/light_2"
+                        },
+                        {
+                            "id": "fridge_1",
+                            "name": {
+                                "en": "Mini Refrigerator",
+                                "bn": "মিনি রেফ্রিজারেটর"
+                            },
+                            "price": 18000,
+                            "original_price": 20000,
+                            "rating": 4.8,
+                            "reviews_count": 12,
+                            "brand": {
+                                "en": "Samsung",
+                                "bn": "স্যামসাং"
+                            },
+                            "delivery_time": {
+                                "en": "3 Days",
+                                "bn": "৩ দিন"
+                            },
+                            "short_description": {
+                                "en": "Compact fridge suitable for bedrooms or offices.",
+                                "bn": "বেডরুম বা অফিসের জন্য উপযুক্ত ছোট ফ্রিজ।"
+                            },
+                            "image": "images/homeservice/home_accessories/fridge.jpg",
+                            "url": "/category/home_accessories/product/fridge_1"
+                        },
+                        {
+                            "id": "ac_1",
+                            "name": {
+                                "en": "1 Ton AC",
+                                "bn": "১ টন এসি"
+                            },
+                            "price": 42000,
+                            "original_price": 45000,
+                            "rating": 4.9,
+                            "reviews_count": 28,
+                            "brand": {
+                                "en": "General",
+                                "bn": "জেনারেল"
+                            },
+                            "delivery_time": {
+                                "en": "3 Days",
+                                "bn": "৩ দিন"
+                            },
+                            "short_description": {
+                                "en": "Powerful cooling with energy saving inverter technology.",
+                                "bn": "এনার্জি সেভিং ইনভার্টার প্রযুক্তি সহ শক্তিশালী কুলিং।"
+                            },
+                            "image": "images/homeservice/home_accessories/ac.jpg",
+                            "url": "/category/home_accessories/product/ac_1"
+                        }
+                    ]
+                },
+                {
+                    "id": "electricians",
+                    "name": {
+                        "en": "Electricians",
+                        "bn": "ইলেকট্রিশিয়ান"
+                    },
+                    "type": "service",
+                    "items": [
+                        {
+                            "id": "elec_1",
+                            "name": {
+                                "en": "Rahim Uddin",
+                                "bn": "রহিম উদ্দিন"
+                            },
+                            "price": 500,
+                            "unit": "per work",
+                            "experience": {
+                                "en": "5 Years",
+                                "bn": "৫ বছর"
+                            },
+                            "rating": 4.8,
+                            "reviews_count": 156,
+                            "brand": {
+                                "en": "Expert Service",
+                                "bn": "এক্সপার্ট সার্ভিস"
+                            },
+                            "delivery_time": {
+                                "en": "Arrives in 1 Hour",
+                                "bn": "১ ঘণ্টার মধ্যে পৌঁছাবে"
+                            },
+                            "short_description": {
+                                "en": "Professional electrician for all kinds of wiring and repair.",
+                                "bn": "সব ধরণের ওয়্যারিং এবং মেরামতের জন্য পেশাদার ইলেকট্রিশিয়ান।"
+                            },
+                            "image": "images/homeservice/electricians/person1.jpg",
+                            "expertise": {
+                                "en": "Wiring, Fan Repair",
+                                "bn": "ওয়্যারিং, ফ্যান মেরামত"
+                            },
+                            "url": "/category/electricians/product/elec_1"
+                        },
+                        {
+                            "id": "elec_2",
+                            "name": {
+                                "en": "Karim Mia",
+                                "bn": "করিম মিয়া"
+                            },
+                            "price": 450,
+                            "unit": "per hour",
+                            "experience": {
+                                "en": "3 Years",
+                                "bn": "৩ বছর"
+                            },
+                            "rating": 4.5,
+                            "reviews_count": 82,
+                            "brand": {
+                                "en": "Quick Fix",
+                                "bn": "কুইক ফিক্স"
+                            },
+                            "delivery_time": {
+                                "en": "Arrives in 2 Hours",
+                                "bn": "২ ঘণ্টার মধ্যে পৌঁছাবে"
+                            },
+                            "short_description": {
+                                "en": "Reliable service for small electrical fixes.",
+                                "bn": "ছোটখাটো বৈদ্যুতিক মেরামতের জন্য নির্ভরযোগ্য সেবা।"
+                            },
+                            "image": "images/homeservice/electricians/person2.jpg",
+                            "expertise": {
+                                "en": "Switchboard, Light Install",
+                                "bn": "সুইচবোর্ড, লাইট ইনস্টল"
+                            },
+                            "url": "/category/electricians/product/elec_2"
+                        }
+                    ]
+                },
+                {
+                    "id": "plumbers",
+                    "name": {
+                        "en": "Plumbers",
+                        "bn": "প্লাম্বার"
+                    },
+                    "type": "service",
+                    "items": [
+                        {
+                            "id": "plumb_1",
+                            "name": {
+                                "en": "Sujon Khan",
+                                "bn": "সুজন খান"
+                            },
+                            "price": 600,
+                            "unit": "per hour",
+                            "experience": {
+                                "en": "7 Years",
+                                "bn": "৭ বছর"
+                            },
+                            "rating": 4.9,
+                            "reviews_count": 203,
+                            "brand": {
+                                "en": "Master Plumber",
+                                "bn": "মাস্টার প্লাম্বার"
+                            },
+                            "delivery_time": {
+                                "en": "Arrives in 1 Hour",
+                                "bn": "১ ঘণ্টার মধ্যে পৌঁছাবে"
+                            },
+                            "short_description": {
+                                "en": "Expert in leak detection and pipe fitting.",
+                                "bn": "লিকেজ সনাক্তকরণ এবং পাইপ ফিটিংয়ে বিশেষজ্ঞ।"
+                            },
+                            "image": "images/homeservice/plumbers/person3.jpg",
+                            "expertise": {
+                                "en": "Leakage, Pipe Fitting",
+                                "bn": "লিকেজ, পাইপ ফিটিং"
+                            },
+                            "url": "/category/plumbers/product/plumb_1"
+                        }
+                    ]
+                },
+                {
+                    "id": "cleaners",
+                    "name": {
+                        "en": "Home Cleaners",
+                        "bn": "ঘর পরিষ্কারক"
+                    },
+                    "type": "service",
+                    "items": [
+                        {
+                            "id": "clean_1",
+                            "name": {
+                                "en": "Fatima Begum",
+                                "bn": "ফাতেমা বেগম"
+                            },
+                            "price": 1500,
+                            "unit": "per visit",
+                            "experience": {
+                                "en": "4 Years",
+                                "bn": "৪ বছর"
+                            },
+                            "rating": 4.7,
+                            "reviews_count": 95,
+                            "brand": {
+                                "en": "Sparkle Clean",
+                                "bn": "স্পার্কল ক্লিন"
+                            },
+                            "delivery_time": {
+                                "en": "Schedule Required",
+                                "bn": "শিডিউল প্রয়োজন"
+                            },
+                            "short_description": {
+                                "en": "Deep cleaning service for your entire home.",
+                                "bn": "আপনার পুরো ঘরের জন্য ডিপ ক্লিনিং সার্ভিস।"
+                            },
+                            "image": "images/homeservice/cleaners/person4.jpg",
+                            "expertise": {
+                                "en": "Deep Cleaning",
+                                "bn": "ডিপ ক্লিনিং"
+                            },
+                            "url": "/category/cleaners/product/clean_1"
+                        }
+                    ]
+                },
+                {
+                    "id": "laundry",
+                    "name": {
+                        "en": "Laundry Service",
+                        "bn": "লন্ড্রি সার্ভিস"
+                    },
+                    "items": [
+                        {
+                            "id": "lau_1",
+                            "name": {
+                                "en": "Wash & Iron",
+                                "bn": "ওয়াশ + আয়রন"
+                            },
+                            "price": 25,
+                            "rating": 4.6,
+                            "reviews_count": 340,
+                            "brand": {
+                                "en": "Clean Press",
+                                "bn": "ক্লিন প্রেস"
+                            },
+                            "delivery_time": {
+                                "en": "2 Days",
+                                "bn": "২ দিন"
+                            },
+                            "short_description": {
+                                "en": "Professional washing and ironing service.",
+                                "bn": "পেশাদার ধোয়া এবং ইস্ত্রি সেবা।"
+                            },
+                            "unit": "cloth",
+                            "image": "images/homeservice/laundry/laundry.jpg",
+                            "url": "/category/laundry/product/lau_1"
+                        },
+                        {
+                            "id": "lau_2",
+                            "name": {
+                                "en": "Dry Wash",
+                                "bn": "ড্রাই ওয়াশ"
+                            },
+                            "price": 60,
+                            "rating": 4.8,
+                            "reviews_count": 112,
+                            "brand": {
+                                "en": "Premium Dry Cleaners",
+                                "bn": "প্রিমিয়াম ড্রাই ক্লিনার্স"
+                            },
+                            "delivery_time": {
+                                "en": "3 Days",
+                                "bn": "৩ দিন"
+                            },
+                            "short_description": {
+                                "en": "Careful dry cleaning for delicate fabrics.",
+                                "bn": "সূক্ষ্ম কাপড়ের জন্য যত্নসহকারে ড্রাই ক্লিনিং।"
+                            },
+                            "unit": "cloth",
+                            "image": "images/homeservice/laundry/drywash.jpg",
+                            "url": "/category/laundry/product/lau_2"
+                        },
+                        {
+                            "id": "lau_3",
+                            "name": {
+                                "en": "Bedsheet Cleaning",
+                                "bn": "বেডশীট পরিষ্কার"
+                            },
+                            "price": 120,
+                            "rating": 4.5,
+                            "reviews_count": 67,
+                            "brand": {
+                                "en": "Home Fresh",
+                                "bn": "হোম ফ্রেশ"
+                            },
+                            "delivery_time": {
+                                "en": "2 Days",
+                                "bn": "২ দিন"
+                            },
+                            "short_description": {
+                                "en": "Hygienic cleaning for bedsheets and covers.",
+                                "bn": "বেডশীট এবং কভারের জন্য স্বাস্থ্যকর পরিষ্কার।"
+                            },
+                            "unit": "per sheet",
+                            "image": "images/homeservice/laundry/bedsheet.jpg",
+                            "url": "/category/laundry/product/lau_3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "grocery",
+            "name": {
+                "en": "Grocery Item",
+                "bn": "মুদি আইটেম"
+            },
+            "subcategories": [
+                {
+                    "id": "rice",
+                    "name": {
+                        "en": "Rice",
+                        "bn": "চাল"
+                    },
+                    "items": [
+                        {
+                            "id": "rice_1",
+                            "name": {
+                                "en": "Miniket Rice",
+                                "bn": "মিনিকেট চাল"
+                            },
+                            "price": 70,
+                            "original_price": 75,
+                            "rating": 4.6,
+                            "reviews_count": 450,
+                            "brand": {
+                                "en": "Chashi",
+                                "bn": "চাষী"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Premium quality Miniket rice.",
+                                "bn": "প্রিমিয়াম মানের মিনিকেট চাল।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/rice/rice.jpg",
+                            "url": "/category/rice/product/rice_1"
+                        },
+                        {
+                            "id": "rice_2",
+                            "name": {
+                                "en": "Nazirshail Rice",
+                                "bn": "নাজিরশাইল চাল"
+                            },
+                            "price": 85,
+                            "rating": 4.7,
+                            "reviews_count": 320,
+                            "brand": {
+                                "en": "Pran",
+                                "bn": "প্রাণ"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Fine grain Nazirshail rice.",
+                                "bn": "সরু দানার নাজিরশাইল চাল।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/rice/nazir.jpg",
+                            "url": "/category/rice/product/rice_2"
+                        },
+                        {
+                            "id": "rice_3",
+                            "name": {
+                                "en": "Basmati Rice",
+                                "bn": "বাসমতি চাল"
+                            },
+                            "price": 140,
+                            "original_price": 160,
+                            "rating": 4.9,
+                            "reviews_count": 180,
+                            "brand": {
+                                "en": "Fortune",
+                                "bn": "ফরচুন"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Aromatic long grain Basmati rice.",
+                                "bn": "সুগন্ধি লম্বা দানার বাসমতি চাল।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/rice/basmati.jpg",
+                            "url": "/category/rice/product/rice_3"
+                        }
+                    ]
+                },
+                {
+                    "id": "oil",
+                    "name": {
+                        "en": "Oil",
+                        "bn": "তেল"
+                    },
+                    "items": [
+                        {
+                            "id": "oil_1",
+                            "name": {
+                                "en": "Soybean Oil",
+                                "bn": "সয়াবিন তেল"
+                            },
+                            "price": 180,
+                            "original_price": 190,
+                            "rating": 4.8,
+                            "reviews_count": 600,
+                            "brand": {
+                                "en": "Rupchanda",
+                                "bn": "রূপচাঁদা"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Fortified soybean oil for healthy cooking.",
+                                "bn": "স্বাস্থ্যকর রান্নার জন্য ফর্টিফাইড সয়াবিন তেল।"
+                            },
+                            "unit": "liter",
+                            "image": "images/grocery/oil/oil.jpg",
+                            "url": "/category/oil/product/oil_1"
+                        },
+                        {
+                            "id": "oil_2",
+                            "name": {
+                                "en": "Mustard Oil",
+                                "bn": "সরিষার তেল"
+                            },
+                            "price": 250,
+                            "rating": 4.7,
+                            "reviews_count": 230,
+                            "brand": {
+                                "en": "Radhuni",
+                                "bn": "রাঁধুনী"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Pure mustard oil with strong aroma.",
+                                "bn": "তীব্র সুবাস সহ খাঁটি সরিষার তেল।"
+                            },
+                            "unit": "liter",
+                            "image": "images/grocery/oil/mustard_oil.jpg",
+                            "url": "/category/oil/product/oil_2"
+                        }
+                    ]
+                },
+                {
+                    "id": "salt",
+                    "name": {
+                        "en": "Salt",
+                        "bn": "লবণ"
+                    },
+                    "items": [
+                        {
+                            "id": "salt_1",
+                            "name": {
+                                "en": "Iodized Salt",
+                                "bn": "আয়োডিন লবণ"
+                            },
+                            "price": 35,
+                            "rating": 4.9,
+                            "reviews_count": 800,
+                            "brand": {
+                                "en": "ACI",
+                                "bn": "এসিআই"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Pure iodized salt for daily use.",
+                                "bn": "নিত্যদিনের ব্যবহারের জন্য খাঁটি আয়োডিন লবণ।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/salt/salt.jpg",
+                            "url": "/category/salt/product/salt_1"
+                        }
+                    ]
+                },
+                {
+                    "id": "flour",
+                    "name": {
+                        "en": "Flour",
+                        "bn": "আটা ও ময়দা"
+                    },
+                    "items": [
+                        {
+                            "id": "atta_1",
+                            "name": {
+                                "en": "Atta",
+                                "bn": "আটা"
+                            },
+                            "price": 45,
+                            "rating": 4.6,
+                            "reviews_count": 350,
+                            "brand": {
+                                "en": "Teer",
+                                "bn": "তীর"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Whole wheat atta for soft rotis.",
+                                "bn": "নরম রুটির জন্য গমের আটা।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/flour/atta.jpg",
+                            "url": "/category/flour/product/atta_1"
+                        },
+                        {
+                            "id": "atta_2",
+                            "name": {
+                                "en": "Flour (Maida)",
+                                "bn": "ময়দা"
+                            },
+                            "price": 55,
+                            "rating": 4.7,
+                            "reviews_count": 280,
+                            "brand": {
+                                "en": "Bashundhara",
+                                "bn": "বসুন্ধরা"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Refined white flour for baking.",
+                                "bn": "বেকিংয়ের জন্য রিফাইন্ড সাদা ময়দা।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/flour/maida.jpg",
+                            "url": "/category/flour/product/atta_2"
+                        }
+                    ]
+                },
+                {
+                    "id": "dal",
+                    "name": {
+                        "en": "Dal (Lentil)",
+                        "bn": "ডাল"
+                    },
+                    "items": [
+                        {
+                            "id": "dal_1",
+                            "name": {
+                                "en": "Lentil (Masoor Dal)",
+                                "bn": "মসুর ডাল"
+                            },
+                            "price": 120,
+                            "original_price": 130,
+                            "rating": 4.8,
+                            "reviews_count": 410,
+                            "brand": {
+                                "en": "Deshi",
+                                "bn": "দেশি"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Premium quality Masoor Dal.",
+                                "bn": "প্রিমিয়াম মানের মসুর ডাল।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/dal/dal.jpg",
+                            "url": "/category/dal/product/dal_1"
+                        },
+                        {
+                            "id": "dal_2",
+                            "name": {
+                                "en": "Chickpea (Chola)",
+                                "bn": "ছোলা"
+                            },
+                            "price": 95,
+                            "rating": 4.5,
+                            "reviews_count": 150,
+                            "brand": {
+                                "en": "Imported",
+                                "bn": "ইম্পোর্টেড"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "High quality Chickpeas.",
+                                "bn": "উচ্চ মানের ছোলা।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/dal/chola.jpg",
+                            "url": "/category/dal/product/dal_2"
+                        },
+                        {
+                            "id": "dal_3",
+                            "name": {
+                                "en": "Mug Dal",
+                                "bn": "মুড় ডাল"
+                            },
+                            "price": 140,
+                            "rating": 4.7,
+                            "reviews_count": 190,
+                            "brand": {
+                                "en": "Deshi",
+                                "bn": "দেশি"
+                            },
+                            "delivery_time": {
+                                "en": "Same Day",
+                                "bn": "আজকেই"
+                            },
+                            "short_description": {
+                                "en": "Golden Mug Dal.",
+                                "bn": "সোনালী মুগ ডাল।"
+                            },
+                            "unit": "kg",
+                            "image": "images/grocery/dal/mug_dal.jpg",
+                            "url": "/category/dal/product/dal_3"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
