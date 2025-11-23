@@ -21,24 +21,22 @@
                 <li>
                     <a href="/" data-key="settings.nav.home">Home</a>
                 </li>
+                {% for category in data.categories %}
                 <li class="dropdown-container">
                     <div class="dropdown-header">
-                        <a href="/category/homeservice" data-key="settings.nav.homeservice">Homeservice</a>
+                        <a href="/category/{{ category.id }}" data-key="categories.{{ loop.index0 }}.name">{{
+                            category.name.en }}</a>
+                        {% if category.subcategories %}
                         <span class="arrow">▼</span>
+                        {% endif %}
                     </div>
-                    <div class="dropdown-content" id="homeservice-dropdown">
+                    {% if category.subcategories %}
+                    <div class="dropdown-content" id="{{ category.id }}-dropdown">
                         <!-- Populated by JS -->
                     </div>
+                    {% endif %}
                 </li>
-                <li class="dropdown-container">
-                    <div class="dropdown-header">
-                        <a href="/category/grocery" data-key="settings.nav.grocery">Grocery Item</a>
-                        <span class="arrow">▼</span>
-                    </div>
-                    <div class="dropdown-content" id="grocery-dropdown">
-                        <!-- Populated by JS -->
-                    </div>
-                </li>
+                {% endfor %}
             </ul>
 
             <div class="sidebar-footer">
@@ -51,30 +49,38 @@
 
         <!-- Main Content Area -->
         <div class="main-content">
-            <!-- Top Bar for Cart and Mobile Toggle -->
-            <header class="top-bar">
-                <div class="mobile-toggle">☰</div>
-                <div class="ad-section">
-                    <marquee behavior="scroll" direction="left" scrollamount="5">আমাদের যে কোন পণ্য অর্ডার করতে কল বা
-                        WhatsApp করুন: +8801321208940 | হট লাইন: 09642-922922</marquee>
-                </div>
-                <div class="cart-icon" onclick="toggleCart()">
-                    <span data-key="settings.nav.cart">Cart</span> (<span id="cart-count">0</span>)
-                </div>
-            </header>
+            <div class="sticky-header">
+                <!-- Top Bar for Cart and Mobile Toggle -->
+                <header class="top-bar">
+                    <div class="mobile-toggle">☰</div>
+                    <div class="ad-section">
+                        <marquee behavior="scroll" direction="left" scrollamount="5">আমাদের যে কোন পণ্য অর্ডার করতে কল
+                            বা
+                            WhatsApp করুন: +8801321208940 | হট লাইন: 09642-922922</marquee>
+                    </div>
+                    <div class="cart-icon" onclick="toggleCart()">
+                        <span data-key="settings.nav.cart">Cart</span> (<span id="cart-count">0</span>)
+                    </div>
+                </header>
 
-            <div class="category-quick-links">
-                <a href="/category/homeservice" class="quick-btn">Homeservice</a>
-                <a href="/category/grocery" class="quick-btn">Grocery</a>
+                <!-- Breadcrumbs -->
+                <div id="breadcrumbs" class="breadcrumbs-container"></div>
+
+                <!-- Search Section -->
+                <div class="search-container">
+                    <input type="text" id="product-search" placeholder="Search products..." autocomplete="off">
+                    <div id="live-search-results" class="live-search-results">
+                        <div id="search-categories" class="search-categories"></div>
+                        <div id="search-products" class="search-products-grid"></div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Search Section -->
-            <div class="search-container">
-                <input type="text" id="product-search" placeholder="Search products..." autocomplete="off">
-                <div id="live-search-results" class="live-search-results">
-                    <div id="search-categories" class="search-categories"></div>
-                    <div id="search-products" class="search-products-grid"></div>
-                </div>
+            <div class="category-quick-links">
+                {% for category in data.categories %}
+                <a href="/category/{{ category.id }}" class="quick-btn" data-key="categories.{{ loop.index0 }}.name">{{
+                    category.name.en }}</a>
+                {% endfor %}
             </div>
 
             <main>
@@ -135,49 +141,7 @@
         </div>
     </div>
 
-    <!-- Product Details Modal -->
-    <div id="product-modal" class="modal">
-        <div class="modal-content product-modal-content">
-            <span class="close-modal" id="close-product-modal">&times;</span>
-            <div class="product-details-container">
-                <div class="modal-image-section modal-image">
-                    <div class="img-placeholder-large" id="modal-img-placeholder"></div>
-                </div>
-                <div class="modal-info-section">
-                    <span class="brand-badge" id="modal-brand">Brand</span>
-                    <h2 id="modal-title">Product Title</h2>
-                    <div class="modal-rating">
-                        <span class="stars">⭐⭐⭐⭐⭐</span>
-                        <span class="review-count">(<span id="modal-reviews">0</span> reviews)</span>
-                    </div>
-                    <div class="modal-price-section">
-                        <span class="current-price">৳<span id="modal-price">0</span></span>
-                        <span class="original-price">৳<span id="modal-original-price">0</span></span>
-                        <span class="discount-badge" id="modal-discount">0% OFF</span>
-                    </div>
-                    <p class="modal-description" id="modal-description">Description goes here...</p>
-
-                    <div class="modal-meta">
-                        <div class="meta-item">
-                            <strong>Delivery:</strong> <span id="modal-delivery">2 Days</span>
-                        </div>
-                    </div>
-
-                    <div class="quantity-control">
-                        <button class="qty-btn" onclick="updateModalQuantity(-1)">-</button>
-                        <span id="modal-quantity">1</span>
-                        <button class="qty-btn" onclick="updateModalQuantity(1)">+</button>
-                    </div>
-
-                    <button class="add-to-cart-btn modal-add-btn" id="modal-add-btn">
-                        Add to Cart - ৳<span id="modal-total-price">0</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="/static/js/script.js"></script>
+    <script src="/static/js/script.js?v=2"></script>
 </body>
 
 </html>

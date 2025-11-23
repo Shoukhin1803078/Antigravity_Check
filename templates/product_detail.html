@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <div class="product-detail-container"
+        style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); overflow: hidden;">
+        <div class="product-detail-grid"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; padding: 3rem;">
+            <!-- Left: Image -->
+            <div class="product-detail-image"
+                style="display: flex; align-items: center; justify-content: center; background: #f8f9fa; border-radius: 15px; padding: 2rem;">
+                {% if product.image %}
+                <img src="{{ url_for('static', path=product.image) }}" alt="{{ product.name.en }}"
+                    style="max-width: 100%; max-height: 500px; object-fit: contain;">
+                {% else %}
+                <div class="img-placeholder" style="font-size: 5rem; color: #ccc;">{{ product.name.en[0] }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Right: Info -->
+            <div class="product-detail-info">
+                <div class="breadcrumb" style="margin-bottom: 1rem; color: #888; font-size: 0.9rem;">
+                    <a href="/" style="color: #888; text-decoration: none;">Home</a> >
+                    <a href="/category/{{ category.id }}" style="color: #888; text-decoration: none;">{{
+                        category.name.en }}</a> >
+                    <span>{{ product.name.en }}</span>
+                </div>
+
+                <h1 id="detail-title" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--dark);">{{
+                    product.name[current_lang]
+                    }}</h1>
+
+                {% if product.brand %}
+                <p style="font-size: 1.1rem; color: #666; margin-bottom: 0.5rem;">Brand: <span id="detail-brand"
+                        style="color: var(--primary); font-weight: 600;">{{ product.brand[current_lang] }}</span></p>
+                {% endif %}
+
+                {% if product.model_name %}
+                <p style="font-size: 1.1rem; color: #666; margin-bottom: 1.5rem;">Model: <span id="detail-model"
+                        style="color: var(--secondary); font-weight: 600;">{{ product.model_name[current_lang] }}</span>
+                </p>
+                {% endif %}
+
+                <div class="price-rating-row"
+                    style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+                    <div class="price-block">
+                        <span style="font-size: 2rem; font-weight: 700; color: var(--primary);">৳{{ product.price
+                            }}</span>
+                        {% if product.original_price %}
+                        <span
+                            style="text-decoration: line-through; color: #aaa; font-size: 1.2rem; margin-left: 0.5rem;">৳{{
+                            product.original_price }}</span>
+                        {% endif %}
+                    </div>
+                    {% if product.rating %}
+                    <div class="rating-block"
+                        style="display: flex; align-items: center; gap: 0.5rem; background: #fff9db; padding: 0.5rem 1rem; border-radius: 50px;">
+                        <span style="color: #f1c40f;">★</span>
+                        <span style="font-weight: 600;">{{ product.rating }}</span>
+                        <span style="color: #888; font-size: 0.9rem;">({{ product.reviews_count }} reviews)</span>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="short-desc" style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6; color: #555;">
+                    <span id="detail-short-desc">{{ product.short_description[current_lang] }}</span>
+                </div>
+
+                <div class="action-buttons" style="display: flex; gap: 1rem;">
+                    <button class="add-to-cart-btn" data-id="{{ product.id }}" data-name-en="{{ product.name.en }}"
+                        data-name-bn="{{ product.name.bn }}" data-price="{{ product.price }}" {% if product.model_name
+                        %}data-model-en="{{ product.model_name.en }}" data-model-bn="{{ product.model_name.bn }}" {%
+                        endif %} {% if product.brand %}data-brand-en="{{ product.brand.en }}"
+                        data-brand-bn="{{ product.brand.bn }}" {% endif %}
+                        style="padding: 1rem 2rem; font-size: 1.1rem;">
+                        <span id="detail-btn-text">{% if product.type == 'service' %}Hire Now{% else %}Add to Cart{%
+                            endif %}</span>
+                    </button>
+                </div>
+
+                {% if product.type == 'service' %}
+                <div class="service-meta" style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee;">
+                    <p><strong>Experience:</strong> <span id="detail-experience">{{ product.experience[current_lang]
+                            }}</span></p>
+                    <p><strong>Expertise:</strong> <span id="detail-expertise">{{ product.expertise[current_lang]
+                            }}</span></p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Long Description Section -->
+        <div class="product-long-desc" style="padding: 3rem; border-top: 1px solid #eee; background: #fafafa;">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Product Description</h2>
+            <div class="desc-content" style="line-height: 1.8; color: #444;">
+                <div id="detail-long-desc">{{ product.long_description[current_lang] | safe }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        .product-detail-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+            padding: 1.5rem !important;
+        }
+
+        .product-detail-image {
+            padding: 1rem !important;
+        }
+
+        .product-long-desc {
+            padding: 1.5rem !important;
+        }
+    }
+</style>
+
+
+{% endblock %}

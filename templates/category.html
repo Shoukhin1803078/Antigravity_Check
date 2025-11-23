@@ -21,12 +21,17 @@
         {% if category.type == 'service' %}
         <!-- Service Profile Card -->
         <!-- Service Profile Card -->
-        <div class="product-card profile-card" onclick="openProductDetails('{{ item.id }}')">
+        <a href="/category/{{ category.id }}/product/{{ item.id }}" class="product-card profile-card"
+            style="text-decoration: none; color: inherit; display: block;">
             <div class="product-image profile-image">
                 <div class="img-placeholder">{{ item.name.en[0] }}</div>
             </div>
             <div class="product-info">
                 <h3 class="item-name" data-id="{{ item.id }}">{{ item.name.en }}</h3>
+                {% if item.brand %}
+                <p class="item-brand" style="font-size: 0.85rem; color: #666; margin-bottom: 0.2rem;">{{ item.brand.en
+                    }}</p>
+                {% endif %}
                 <div class="profile-details">
                     <p><strong data-key="settings.cart_labels.experience">Experience</strong>: <span class="exp-text">{{
                             item.experience.en }}</span></p>
@@ -34,14 +39,15 @@
                     <p class="expertise">{{ item.expertise.en }}</p>
                 </div>
                 <p class="price">৳{{ item.price }} {% if item.unit %}/ {{ item.unit }}{% endif %}</p>
-                <button class="add-to-cart-btn hire-btn"
-                    onclick="event.stopPropagation(); addToCart('{{ item.id }}', '{{ item.name.en }}', '{{ item.name.bn }}', {{ item.price }})"
+                <button class="add-to-cart-btn hire-btn" data-id="{{ item.id }}" data-name-en="{{ item.name.en }}"
+                    data-name-bn="{{ item.name.bn }}" data-price="{{ item.price }}"
                     data-key="settings.cart_labels.hire">Hire Now</button>
             </div>
-        </div>
+        </a>
         {% else %}
         <!-- Standard Product Card -->
-        <div class="product-card" onclick="openProductDetails('{{ item.id }}')">
+        <a href="/category/{{ category.id }}/product/{{ item.id }}" class="product-card"
+            style="text-decoration: none; color: inherit; display: block;">
             <div class="product-image">
                 {% if item.image %}
                 <img src="{{ url_for('static', path=item.image) }}" alt="{{ item.name.en }}" class="card-img">
@@ -54,6 +60,10 @@
             </div>
             <div class="product-info">
                 <h3 class="item-name" data-id="{{ item.id }}">{{ item.name.en }}</h3>
+                {% if item.brand %}
+                <p class="item-brand" style="font-size: 0.85rem; color: #666; margin-bottom: 0.2rem;">{{ item.brand.en
+                    }}</p>
+                {% endif %}
 
                 {% if item.rating %}
                 <div class="card-rating">
@@ -69,11 +79,11 @@
                     {% endif %}
                 </div>
 
-                <button class="add-to-cart-btn"
-                    onclick="event.stopPropagation(); addToCart('{{ item.id }}', '{{ item.name.en }}', '{{ item.name.bn }}', {{ item.price }})"
+                <button class="add-to-cart-btn" data-id="{{ item.id }}" data-name-en="{{ item.name.en }}"
+                    data-name-bn="{{ item.name.bn }}" data-price="{{ item.price }}"
                     data-key="settings.cart_labels.add_to_cart">Add to Cart</button>
             </div>
-        </div>
+        </a>
         {% endif %}
         {% endfor %}
         {% endif %}

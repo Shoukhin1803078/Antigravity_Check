@@ -17,6 +17,10 @@
                 "en": "Grocery Item",
                 "bn": "মুদি আইটেম"
             },
+            "homeaccessories": {
+                "en": "Home Accessories",
+                "bn": "ঘর সাজানোর সামগ্রী"
+            },
             "cart": {
                 "en": "Cart",
                 "bn": "কার্ট"
@@ -98,20 +102,25 @@
                                 "en": "Safe and durable LP gas cylinder for home cooking.",
                                 "bn": "রান্নার জন্য নিরাপদ এবং টেকসই এলপি গ্যাস সিলিন্ডার।"
                             },
-                            "image": "images/homeservice/cylinder/cylinder.jpeg",
-                            "url": "/category/cylinder/product/cyl_1"
+                            "image": "images/homeservice/cylinder/12_KG_LPG_CYLINDER.png",
+                            "url": "/category/cylinder/product/cyl_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Safe and durable LP gas cylinder for home cooking.</p>\n            <p>This 12kg Gas Cylinder is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>রান্নার জন্য নিরাপদ এবং টেকসই এলপি গ্যাস সিলিন্ডার।</p>\n            <p>এই ১২ কেজি গ্যাস সিলিন্ডার আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "cyl_2",
                             "name": {
-                                "en": "Refill Gas Cylinder",
+                                "en": "Jamuna_Cylinder",
                                 "bn": "সিলিন্ডার রিফিল"
                             },
                             "price": 850,
+                            "original_price": 1350,
                             "rating": 4.9,
                             "reviews_count": 89,
                             "brand": {
-                                "en": "Generic",
+                                "en": "Jamnuna",
                                 "bn": "সাধারণ"
                             },
                             "delivery_time": {
@@ -122,165 +131,12 @@
                                 "en": "Quick refill service for your empty cylinder.",
                                 "bn": "আপনার খালি সিলিন্ডারের জন্য দ্রুত রিফিল সার্ভিস।"
                             },
-                            "image": "images/homeservice/cylinder/cylinder_refill.jpg",
-                            "url": "/category/cylinder/product/cyl_2"
-                        }
-                    ]
-                },
-                {
-                    "id": "home_accessories",
-                    "name": {
-                        "en": "Home Accessories",
-                        "bn": "ঘর সাজানোর সামগ্রী"
-                    },
-                    "items": [
-                        {
-                            "id": "fan_1",
-                            "name": {
-                                "en": "Ceiling Fan",
-                                "bn": "সিলিং ফ্যান"
-                            },
-                            "price": 2500,
-                            "original_price": 2800,
-                            "rating": 4.5,
-                            "reviews_count": 56,
-                            "brand": {
-                                "en": "BRB",
-                                "bn": "বিআরবি"
-                            },
-                            "delivery_time": {
-                                "en": "2 Days",
-                                "bn": "২ দিন"
-                            },
-                            "short_description": {
-                                "en": "High speed ceiling fan with 5 star energy rating.",
-                                "bn": "৫ স্টার এনার্জি রেটিং সহ হাই স্পিড সিলিং ফ্যান।"
-                            },
-                            "image": "images/homeservice/home_accessories/fan.jpeg",
-                            "url": "/category/home_accessories/product/fan_1"
-                        },
-                        {
-                            "id": "fan_2",
-                            "name": {
-                                "en": "Table Fan",
-                                "bn": "টেবিল ফ্যান"
-                            },
-                            "price": 1500,
-                            "rating": 4.2,
-                            "reviews_count": 34,
-                            "brand": {
-                                "en": "Walton",
-                                "bn": "ওয়ালটন"
-                            },
-                            "delivery_time": {
-                                "en": "2 Days",
-                                "bn": "২ দিন"
-                            },
-                            "short_description": {
-                                "en": "Portable table fan for personal cooling.",
-                                "bn": "ব্যক্তিগত ব্যবহারের জন্য পোর্টেবল টেবিল ফ্যান।"
-                            },
-                            "image": "images/homeservice/home_accessories/table_fan.jpg",
-                            "url": "/category/home_accessories/product/fan_2"
-                        },
-                        {
-                            "id": "light_1",
-                            "name": {
-                                "en": "LED Light",
-                                "bn": "এলইডি লাইট"
-                            },
-                            "price": 300,
-                            "original_price": 350,
-                            "rating": 4.7,
-                            "reviews_count": 210,
-                            "brand": {
-                                "en": "Philips",
-                                "bn": "ফিলিপস"
-                            },
-                            "delivery_time": {
-                                "en": "1 Day",
-                                "bn": "১ দিন"
-                            },
-                            "short_description": {
-                                "en": "Bright white LED light, energy saving.",
-                                "bn": "উজ্জ্বল সাদা এলইডি লাইট, বিদ্যুৎ সাশ্রয়ী।"
-                            },
-                            "image": "images/homeservice/home_accessories/light.jpg",
-                            "url": "/category/home_accessories/product/light_1"
-                        },
-                        {
-                            "id": "light_2",
-                            "name": {
-                                "en": "Tube Light",
-                                "bn": "টিউব লাইট"
-                            },
-                            "price": 350,
-                            "rating": 4.4,
-                            "reviews_count": 45,
-                            "brand": {
-                                "en": "Transtec",
-                                "bn": "ট্রান্সটেক"
-                            },
-                            "delivery_time": {
-                                "en": "1 Day",
-                                "bn": "১ দিন"
-                            },
-                            "short_description": {
-                                "en": "Long lasting tube light for room illumination.",
-                                "bn": "ঘরের আলোর জন্য দীর্ঘস্থায়ী টিউব লাইট।"
-                            },
-                            "image": "images/homeservice/home_accessories/tube_light.jpg",
-                            "url": "/category/home_accessories/product/light_2"
-                        },
-                        {
-                            "id": "fridge_1",
-                            "name": {
-                                "en": "Mini Refrigerator",
-                                "bn": "মিনি রেফ্রিজারেটর"
-                            },
-                            "price": 18000,
-                            "original_price": 20000,
-                            "rating": 4.8,
-                            "reviews_count": 12,
-                            "brand": {
-                                "en": "Samsung",
-                                "bn": "স্যামসাং"
-                            },
-                            "delivery_time": {
-                                "en": "3 Days",
-                                "bn": "৩ দিন"
-                            },
-                            "short_description": {
-                                "en": "Compact fridge suitable for bedrooms or offices.",
-                                "bn": "বেডরুম বা অফিসের জন্য উপযুক্ত ছোট ফ্রিজ।"
-                            },
-                            "image": "images/homeservice/home_accessories/fridge.jpg",
-                            "url": "/category/home_accessories/product/fridge_1"
-                        },
-                        {
-                            "id": "ac_1",
-                            "name": {
-                                "en": "1 Ton AC",
-                                "bn": "১ টন এসি"
-                            },
-                            "price": 42000,
-                            "original_price": 45000,
-                            "rating": 4.9,
-                            "reviews_count": 28,
-                            "brand": {
-                                "en": "General",
-                                "bn": "জেনারেল"
-                            },
-                            "delivery_time": {
-                                "en": "3 Days",
-                                "bn": "৩ দিন"
-                            },
-                            "short_description": {
-                                "en": "Powerful cooling with energy saving inverter technology.",
-                                "bn": "এনার্জি সেভিং ইনভার্টার প্রযুক্তি সহ শক্তিশালী কুলিং।"
-                            },
-                            "image": "images/homeservice/home_accessories/ac.jpg",
-                            "url": "/category/home_accessories/product/ac_1"
+                            "image": "images/homeservice/cylinder/Jamuna_Cylinder.png",
+                            "url": "/category/cylinder/product/cyl_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Quick refill service for your empty cylinder.</p>\n            <p>This Jamuna_Cylinder is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>আপনার খালি সিলিন্ডারের জন্য দ্রুত রিফিল সার্ভিস।</p>\n            <p>এই সিলিন্ডার রিফিল আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 },
@@ -323,7 +179,11 @@
                                 "en": "Wiring, Fan Repair",
                                 "bn": "ওয়্যারিং, ফ্যান মেরামত"
                             },
-                            "url": "/category/electricians/product/elec_1"
+                            "url": "/category/electricians/product/elec_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Professional electrician for all kinds of wiring and repair.</p>\n            <p>This Rahim Uddin is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>সব ধরণের ওয়্যারিং এবং মেরামতের জন্য পেশাদার ইলেকট্রিশিয়ান।</p>\n            <p>এই রহিম উদ্দিন আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "elec_2",
@@ -356,7 +216,11 @@
                                 "en": "Switchboard, Light Install",
                                 "bn": "সুইচবোর্ড, লাইট ইনস্টল"
                             },
-                            "url": "/category/electricians/product/elec_2"
+                            "url": "/category/electricians/product/elec_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Reliable service for small electrical fixes.</p>\n            <p>This Karim Mia is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>ছোটখাটো বৈদ্যুতিক মেরামতের জন্য নির্ভরযোগ্য সেবা।</p>\n            <p>এই করিম মিয়া আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 },
@@ -399,7 +263,11 @@
                                 "en": "Leakage, Pipe Fitting",
                                 "bn": "লিকেজ, পাইপ ফিটিং"
                             },
-                            "url": "/category/plumbers/product/plumb_1"
+                            "url": "/category/plumbers/product/plumb_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Expert in leak detection and pipe fitting.</p>\n            <p>This Sujon Khan is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>লিকেজ সনাক্তকরণ এবং পাইপ ফিটিংয়ে বিশেষজ্ঞ।</p>\n            <p>এই সুজন খান আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 },
@@ -442,7 +310,11 @@
                                 "en": "Deep Cleaning",
                                 "bn": "ডিপ ক্লিনিং"
                             },
-                            "url": "/category/cleaners/product/clean_1"
+                            "url": "/category/cleaners/product/clean_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Deep cleaning service for your entire home.</p>\n            <p>This Fatima Begum is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>আপনার পুরো ঘরের জন্য ডিপ ক্লিনিং সার্ভিস।</p>\n            <p>এই ফাতেমা বেগম আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 },
@@ -476,7 +348,11 @@
                             },
                             "unit": "cloth",
                             "image": "images/homeservice/laundry/laundry.jpg",
-                            "url": "/category/laundry/product/lau_1"
+                            "url": "/category/laundry/product/lau_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Professional washing and ironing service.</p>\n            <p>This Wash & Iron is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>পেশাদার ধোয়া এবং ইস্ত্রি সেবা।</p>\n            <p>এই ওয়াশ + আয়রন আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "lau_2",
@@ -501,7 +377,11 @@
                             },
                             "unit": "cloth",
                             "image": "images/homeservice/laundry/drywash.jpg",
-                            "url": "/category/laundry/product/lau_2"
+                            "url": "/category/laundry/product/lau_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Careful dry cleaning for delicate fabrics.</p>\n            <p>This Dry Wash is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>সূক্ষ্ম কাপড়ের জন্য যত্নসহকারে ড্রাই ক্লিনিং।</p>\n            <p>এই ড্রাই ওয়াশ আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "lau_3",
@@ -526,7 +406,236 @@
                             },
                             "unit": "per sheet",
                             "image": "images/homeservice/laundry/bedsheet.jpg",
-                            "url": "/category/laundry/product/lau_3"
+                            "url": "/category/laundry/product/lau_3",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Hygienic cleaning for bedsheets and covers.</p>\n            <p>This Bedsheet Cleaning is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>বেডশীট এবং কভারের জন্য স্বাস্থ্যকর পরিষ্কার।</p>\n            <p>এই বেডশীট পরিষ্কার আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "homeaccessories",
+            "name": {
+                "en": "Home Accessories",
+                "bn": "ঘর সাজানোর সামগ্রী"
+            },
+            "subcategories": [
+                {
+                    "id": "fan",
+                    "name": {
+                        "en": "Fan",
+                        "bn": "ফ্যান"
+                    },
+                    "items": [
+                        {
+                            "id": "fan_1",
+                            "name": {
+                                "en": "Ceiling Fan",
+                                "bn": "সিলিং ফ্যান"
+                            },
+                            "price": 2500,
+                            "original_price": 2800,
+                            "rating": 4.5,
+                            "reviews_count": 56,
+                            "brand": {
+                                "en": "BRB",
+                                "bn": "বিআরবি"
+                            },
+                            "model_name": {
+                                "en": "BRB-CF-5600",
+                                "bn": "বিআরবি-সিএফ-৫৬০০"
+                            },
+                            "delivery_time": {
+                                "en": "2 Days",
+                                "bn": "২ দিন"
+                            },
+                            "short_description": {
+                                "en": "High speed ceiling fan with 5 star energy rating.",
+                                "bn": "৫ স্টার এনার্জি রেটিং সহ হাই স্পিড সিলিং ফ্যান।"
+                            },
+                            "image": "images/homeservice/home_accessories/fan.jpeg",
+                            "url": "/category/fan/product/fan_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>High speed ceiling fan with 5 star energy rating.</p>\n            <p>This Ceiling Fan is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>৫ স্টার এনার্জি রেটিং সহ হাই স্পিড সিলিং ফ্যান।</p>\n            <p>এই সিলিং ফ্যান আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
+                        },
+                        {
+                            "id": "fan_2",
+                            "name": {
+                                "en": "Table Fan",
+                                "bn": "টেবিল ফ্যান"
+                            },
+                            "price": 1500,
+                            "rating": 4.2,
+                            "reviews_count": 34,
+                            "brand": {
+                                "en": "Walton",
+                                "bn": "ওয়ালটন"
+                            },
+                            "model_name": {
+                                "en": "WTF-1200",
+                                "bn": "ডব্লিউটিএফ-১২০০"
+                            },
+                            "delivery_time": {
+                                "en": "2 Days",
+                                "bn": "২ দিন"
+                            },
+                            "short_description": {
+                                "en": "Portable table fan for personal cooling.",
+                                "bn": "ব্যক্তিগত ব্যবহারের জন্য পোর্টেবল টেবিল ফ্যান।"
+                            },
+                            "image": "images/homeservice/home_accessories/table_fan.jpg",
+                            "url": "/category/fan/product/fan_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Portable table fan for personal cooling.</p>\n            <p>This Table Fan is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>ব্যক্তিগত ব্যবহারের জন্য পোর্টেবল টেবিল ফ্যান।</p>\n            <p>এই টেবিল ফ্যান আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "light",
+                    "name": {
+                        "en": "Light",
+                        "bn": "লাইট"
+                    },
+                    "items": [
+                        {
+                            "id": "light_1",
+                            "name": {
+                                "en": "LED Light",
+                                "bn": "এলইডি লাইট"
+                            },
+                            "price": 300,
+                            "original_price": 350,
+                            "rating": 4.7,
+                            "reviews_count": 210,
+                            "brand": {
+                                "en": "Philips",
+                                "bn": "ফিলিপস"
+                            },
+                            "delivery_time": {
+                                "en": "1 Day",
+                                "bn": "১ দিন"
+                            },
+                            "short_description": {
+                                "en": "Bright white LED light, energy saving.",
+                                "bn": "উজ্জ্বল সাদা এলইডি লাইট, বিদ্যুৎ সাশ্রয়ী।"
+                            },
+                            "image": "images/homeservice/home_accessories/light.jpg",
+                            "url": "/category/light/product/light_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Bright white LED light, energy saving.</p>\n            <p>This LED Light is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>উজ্জ্বল সাদা এলইডি লাইট, বিদ্যুৎ সাশ্রয়ী।</p>\n            <p>এই এলইডি লাইট আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
+                        },
+                        {
+                            "id": "light_2",
+                            "name": {
+                                "en": "Tube Light",
+                                "bn": "টিউব লাইট"
+                            },
+                            "price": 350,
+                            "rating": 4.4,
+                            "reviews_count": 45,
+                            "brand": {
+                                "en": "Transtec",
+                                "bn": "ট্রান্সটেক"
+                            },
+                            "delivery_time": {
+                                "en": "1 Day",
+                                "bn": "১ দিন"
+                            },
+                            "short_description": {
+                                "en": "Long lasting tube light for room illumination.",
+                                "bn": "ঘরের আলোর জন্য দীর্ঘস্থায়ী টিউব লাইট।"
+                            },
+                            "image": "images/homeservice/home_accessories/tube_light.jpg",
+                            "url": "/category/light/product/light_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Long lasting tube light for room illumination.</p>\n            <p>This Tube Light is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>ঘরের আলোর জন্য দীর্ঘস্থায়ী টিউব লাইট।</p>\n            <p>এই টিউব লাইট আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "fridge",
+                    "name": {
+                        "en": "Fridge",
+                        "bn": "ফ্রিজ"
+                    },
+                    "items": [
+                        {
+                            "id": "fridge_1",
+                            "name": {
+                                "en": "Mini Refrigerator",
+                                "bn": "মিনি রেফ্রিজারেটর"
+                            },
+                            "price": 18000,
+                            "original_price": 20000,
+                            "rating": 4.8,
+                            "reviews_count": 12,
+                            "brand": {
+                                "en": "Samsung",
+                                "bn": "স্যামসাং"
+                            },
+                            "delivery_time": {
+                                "en": "3 Days",
+                                "bn": "৩ দিন"
+                            },
+                            "short_description": {
+                                "en": "Compact fridge suitable for bedrooms or offices.",
+                                "bn": "বেডরুম বা অফিসের জন্য উপযুক্ত ছোট ফ্রিজ।"
+                            },
+                            "image": "images/homeservice/home_accessories/fridge.jpg",
+                            "url": "/category/fridge/product/fridge_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Compact fridge suitable for bedrooms or offices.</p>\n            <p>This Mini Refrigerator is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>বেডরুম বা অফিসের জন্য উপযুক্ত ছোট ফ্রিজ।</p>\n            <p>এই মিনি রেফ্রিজারেটর আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "ac",
+                    "name": {
+                        "en": "AC",
+                        "bn": "এসি"
+                    },
+                    "items": [
+                        {
+                            "id": "ac_1",
+                            "name": {
+                                "en": "1 Ton AC",
+                                "bn": "১ টন এসি"
+                            },
+                            "price": 42000,
+                            "original_price": 45000,
+                            "rating": 4.9,
+                            "reviews_count": 28,
+                            "brand": {
+                                "en": "General",
+                                "bn": "জেনারেল"
+                            },
+                            "delivery_time": {
+                                "en": "3 Days",
+                                "bn": "৩ দিন"
+                            },
+                            "short_description": {
+                                "en": "Powerful cooling with energy saving inverter technology.",
+                                "bn": "এনার্জি সেভিং ইনভার্টার প্রযুক্তি সহ শক্তিশালী কুলিং।"
+                            },
+                            "image": "images/homeservice/home_accessories/ac.jpg",
+                            "url": "/category/ac/product/ac_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Powerful cooling with energy saving inverter technology.</p>\n            <p>This 1 Ton AC is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>এনার্জি সেভিং ইনভার্টার প্রযুক্তি সহ শক্তিশালী কুলিং।</p>\n            <p>এই ১ টন এসি আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 }
@@ -560,6 +669,10 @@
                                 "en": "Chashi",
                                 "bn": "চাষী"
                             },
+                            "model_name": {
+                                "en": "Miniket Premium",
+                                "bn": "মিনিকেট প্রিমিয়াম"
+                            },
                             "delivery_time": {
                                 "en": "Same Day",
                                 "bn": "আজকেই"
@@ -570,7 +683,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/rice/rice.jpg",
-                            "url": "/category/rice/product/rice_1"
+                            "url": "/category/rice/product/rice_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Premium quality Miniket rice.</p>\n            <p>This Miniket Rice is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>প্রিমিয়াম মানের মিনিকেট চাল।</p>\n            <p>এই মিনিকেট চাল আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "rice_2",
@@ -585,6 +702,10 @@
                                 "en": "Pran",
                                 "bn": "প্রাণ"
                             },
+                            "model_name": {
+                                "en": "Nazirshail Gold",
+                                "bn": "নাজিরশাইল গোল্ড"
+                            },
                             "delivery_time": {
                                 "en": "Same Day",
                                 "bn": "আজকেই"
@@ -595,7 +716,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/rice/nazir.jpg",
-                            "url": "/category/rice/product/rice_2"
+                            "url": "/category/rice/product/rice_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Fine grain Nazirshail rice.</p>\n            <p>This Nazirshail Rice is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>সরু দানার নাজিরশাইল চাল।</p>\n            <p>এই নাজিরশাইল চাল আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "rice_3",
@@ -621,7 +746,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/rice/basmati.jpg",
-                            "url": "/category/rice/product/rice_3"
+                            "url": "/category/rice/product/rice_3",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Aromatic long grain Basmati rice.</p>\n            <p>This Basmati Rice is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>সুগন্ধি লম্বা দানার বাসমতি চাল।</p>\n            <p>এই বাসমতি চাল আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 },
@@ -656,7 +785,11 @@
                             },
                             "unit": "liter",
                             "image": "images/grocery/oil/oil.jpg",
-                            "url": "/category/oil/product/oil_1"
+                            "url": "/category/oil/product/oil_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Fortified soybean oil for healthy cooking.</p>\n            <p>This Soybean Oil is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>স্বাস্থ্যকর রান্নার জন্য ফর্টিফাইড সয়াবিন তেল।</p>\n            <p>এই সয়াবিন তেল আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "oil_2",
@@ -681,7 +814,11 @@
                             },
                             "unit": "liter",
                             "image": "images/grocery/oil/mustard_oil.jpg",
-                            "url": "/category/oil/product/oil_2"
+                            "url": "/category/oil/product/oil_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Pure mustard oil with strong aroma.</p>\n            <p>This Mustard Oil is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>তীব্র সুবাস সহ খাঁটি সরিষার তেল।</p>\n            <p>এই সরিষার তেল আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 },
@@ -715,7 +852,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/salt/salt.jpg",
-                            "url": "/category/salt/product/salt_1"
+                            "url": "/category/salt/product/salt_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Pure iodized salt for daily use.</p>\n            <p>This Iodized Salt is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>নিত্যদিনের ব্যবহারের জন্য খাঁটি আয়োডিন লবণ।</p>\n            <p>এই আয়োডিন লবণ আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 },
@@ -749,7 +890,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/flour/atta.jpg",
-                            "url": "/category/flour/product/atta_1"
+                            "url": "/category/flour/product/atta_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Whole wheat atta for soft rotis.</p>\n            <p>This Atta is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>নরম রুটির জন্য গমের আটা।</p>\n            <p>এই আটা আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "atta_2",
@@ -774,7 +919,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/flour/maida.jpg",
-                            "url": "/category/flour/product/atta_2"
+                            "url": "/category/flour/product/atta_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Refined white flour for baking.</p>\n            <p>This Flour (Maida) is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>বেকিংয়ের জন্য রিফাইন্ড সাদা ময়দা।</p>\n            <p>এই ময়দা আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 },
@@ -809,7 +958,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/dal/dal.jpg",
-                            "url": "/category/dal/product/dal_1"
+                            "url": "/category/dal/product/dal_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Premium quality Masoor Dal.</p>\n            <p>This Lentil (Masoor Dal) is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>প্রিমিয়াম মানের মসুর ডাল।</p>\n            <p>এই মসুর ডাল আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "dal_2",
@@ -834,7 +987,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/dal/chola.jpg",
-                            "url": "/category/dal/product/dal_2"
+                            "url": "/category/dal/product/dal_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>High quality Chickpeas.</p>\n            <p>This Chickpea (Chola) is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>উচ্চ মানের ছোলা।</p>\n            <p>এই ছোলা আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         },
                         {
                             "id": "dal_3",
@@ -859,7 +1016,11 @@
                             },
                             "unit": "kg",
                             "image": "images/grocery/dal/mug_dal.jpg",
-                            "url": "/category/dal/product/dal_3"
+                            "url": "/category/dal/product/dal_3",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Golden Mug Dal.</p>\n            <p>This Mug Dal is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>সোনালী মুগ ডাল।</p>\n            <p>এই মুড় ডাল আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
                         }
                     ]
                 }

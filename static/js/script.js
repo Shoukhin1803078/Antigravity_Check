@@ -10,17 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initApp();
         checkActiveDropdown();
 
-        // Check for open_modal query param
-        const urlParams = new URLSearchParams(window.location.search);
-        const openModalId = urlParams.get('open_modal');
-        if (openModalId) {
-            // Remove the param from URL without reloading
-            const newUrl = window.location.pathname;
-            window.history.replaceState({}, document.title, newUrl);
 
-            // Open the modal
-            openProductDetails(openModalId);
-        }
     } catch (error) {
         console.error('Error fetching data:', error);
     }
@@ -45,7 +35,7 @@ function checkActiveDropdown() {
         if (mainCatId) {
             const dropdown = document.getElementById(`${mainCatId}-dropdown`);
             if (dropdown) {
-                dropdown.classList.add('open');
+                // dropdown.classList.add('open'); // Removed to allow toggle
                 dropdown.parentElement.classList.add('active');
             }
         }
@@ -57,19 +47,94 @@ function initApp() {
     setupLanguageSwitcher();
     updateLanguage();
     updateCartUI();
+    updateCartUI();
+    setupDropdownListeners();
+    updateBreadcrumbs();
+}
+
+function updateBreadcrumbs() {
+    const container = document.getElementById('breadcrumbs');
+    if (!container) return;
+
+    const path = window.location.pathname;
+    const parts = path.split('/').filter(p => p);
+
+    let html = `<a href="/" class="breadcrumb-item" data-key="nav.home">Home</a>`;
+
+    if (parts.length > 0) {
+        // Category
+        if (parts[0] === 'category' && parts[1]) {
+            const catId = parts[1];
+            let catName = catId; // Fallback
+
+            // Find category name
+            if (appData.categories) {
+                const cat = appData.categories.find(c => c.id === catId);
+                if (cat) {
+                    catName = cat.name[currentLang];
+                } else {
+                    // Check subcategories
+                    appData.categories.forEach(c => {
+                        if (c.subcategories) {
+                            const sub = c.subcategories.find(s => s.id === catId);
+                            if (sub) catName = sub.name[currentLang];
+                        }
+                    });
+                }
+            }
+
+            html += ` <span class="breadcrumb-separator">›</span> <a href="/category/${catId}" class="breadcrumb-item">${catName}</a>`;
+
+            // Product
+            if (parts[2] === 'product' && parts[3]) {
+                const prodId = parts[3];
+                let prodName = prodId; // Fallback
+
+                // Find product name (need flattened data or search)
+                const item = findItem(prodId);
+                if (item) prodName = item.name[currentLang];
+
+                html += ` <span class="breadcrumb-separator">›</span> <span class="breadcrumb-item active">${prodName}</span>`;
+            }
+        }
+    }
+
+    container.innerHTML = html;
+}
+
+function setupDropdownListeners() {
+    document.querySelectorAll('.dropdown-header').forEach(header => {
+        header.addEventListener('click', (e) => {
+            // Prevent navigation to allow toggle behavior
+            e.preventDefault();
+            const container = header.parentElement;
+            container.classList.toggle('active');
+        });
+    });
 }
 
 function populateDropdown() {
-    populateCategoryDropdown('homeservice', 'homeservice-dropdown');
-    populateCategoryDropdown('grocery', 'grocery-dropdown');
+    if (!appData.categories) return;
+
+    appData.categories.forEach(category => {
+        if (category.subcategories) {
+            populateCategoryDropdown(category.id, `${category.id}-dropdown`);
+        }
+    });
 }
 
 function populateCategoryDropdown(categoryId, elementId) {
     const dropdownContent = document.getElementById(elementId);
-    if (!dropdownContent) return;
+    if (!dropdownContent) {
+        console.error(`Dropdown element not found: ${elementId}`);
+        return;
+    }
 
     const category = appData.categories.find(c => c.id === categoryId);
+    console.log(`Populating ${categoryId}:`, category);
+
     if (category && category.subcategories) {
+        console.log(`Found ${category.subcategories.length} subcategories for ${categoryId}`);
         dropdownContent.innerHTML = ''; // Clear existing
         category.subcategories.forEach(sub => {
             if (sub.items && sub.items.length > 0) {
@@ -174,6 +239,46 @@ function updateLanguage() {
     }
 
     updateCartUI(); // To translate cart labels if any dynamic
+
+    // Update Product Detail Page
+    const detailTitle = document.getElementById('detail-title');
+    if (detailTitle) {
+        const path = window.location.pathname;
+        const parts = path.split('/');
+        const prodId = parts[parts.length - 1]; // Assuming /product/ID format
+
+        const item = findItem(prodId);
+        if (item) {
+            detailTitle.textContent = item.name[currentLang];
+
+            const detailBrand = document.getElementById('detail-brand');
+            if (detailBrand && item.brand) detailBrand.textContent = item.brand[currentLang];
+
+            const detailModel = document.getElementById('detail-model');
+            if (detailModel && item.model_name) detailModel.textContent = item.model_name[currentLang];
+
+            const detailShortDesc = document.getElementById('detail-short-desc');
+            if (detailShortDesc && item.short_description) detailShortDesc.textContent = item.short_description[currentLang];
+
+            const detailLongDesc = document.getElementById('detail-long-desc');
+            if (detailLongDesc && item.long_description) detailLongDesc.innerHTML = item.long_description[currentLang];
+
+            const detailExperience = document.getElementById('detail-experience');
+            if (detailExperience && item.experience) detailExperience.textContent = item.experience[currentLang];
+
+            const detailExpertise = document.getElementById('detail-expertise');
+            if (detailExpertise && item.expertise) detailExpertise.textContent = item.expertise[currentLang];
+
+            const detailBtnText = document.getElementById('detail-btn-text');
+            if (detailBtnText) {
+                if (item.type === 'service') {
+                    detailBtnText.textContent = currentLang === 'en' ? 'Hire Now' : 'হায়ার করুন';
+                } else {
+                    detailBtnText.textContent = currentLang === 'en' ? 'Add to Cart' : 'কার্টে যোগ করুন';
+                }
+            }
+        }
+    }
 }
 
 function getNestedValue(obj, key, lang) {
@@ -214,17 +319,7 @@ function toggleCart() {
     document.getElementById('cart-sidebar').classList.toggle('open');
 }
 
-function addToCart(id, nameEn, nameBn, price) {
-    const existing = cart.find(item => item.id === id);
-    if (existing) {
-        existing.quantity += 1;
-    } else {
-        cart.push({ id, name: { en: nameEn, bn: nameBn }, price, quantity: 1 });
-    }
-    saveCart();
-    updateCartUI();
-    toggleCart(); // Open cart to show feedback
-}
+
 
 function removeFromCart(id) {
     cart = cart.filter(item => item.id !== id);
@@ -370,139 +465,61 @@ async function submitOrder(event) {
     }
 }
 
-// Product Details Modal Logic
-let currentModalItem = null;
-let modalQuantity = 1;
 
-function openProductDetails(id) {
-    console.log('Opening details for:', id);
-    console.log('AppData:', appData);
-    const item = findItem(id);
-    console.log('Found item:', item);
-    if (!item) return;
 
-    currentModalItem = item;
-    modalQuantity = 1;
-
-    // Populate modal
-    const modalImage = document.querySelector('.modal-image');
-    if (item.image) {
-        modalImage.innerHTML = `<img src="/static/${item.image}" alt="${item.name.en}" style="width: 100%; height: 100%; object-fit: contain;">`;
-    } else {
-        modalImage.innerHTML = `<div class="img-placeholder" style="font-size: 3rem;">${item.name.en[0]}</div>`;
-    }
-
-    document.getElementById('modal-brand').textContent = item.brand ? item.brand[currentLang] : 'Generic';
-    document.getElementById('modal-title').textContent = item.name[currentLang];
-    document.getElementById('modal-price').textContent = `৳${item.price}`;
-
-    // Rating
-    const ratingContainer = document.querySelector('.modal-rating');
-    if (item.rating) {
-        ratingContainer.style.display = 'flex';
-        ratingContainer.querySelector('.stars').textContent = '⭐'.repeat(Math.round(item.rating));
-        document.getElementById('modal-reviews').textContent = item.reviews_count || 0;
-    } else {
-        ratingContainer.style.display = 'none';
-    }
-
-    // Price
-    document.getElementById('modal-price').textContent = item.price;
-    const originalPriceEl = document.getElementById('modal-original-price');
-    const discountEl = document.getElementById('modal-discount');
-
-    if (item.original_price && item.original_price > item.price) {
-        originalPriceEl.parentElement.style.display = 'inline';
-        originalPriceEl.textContent = item.original_price;
-
-        const discount = Math.round(((item.original_price - item.price) / item.original_price) * 100);
-        discountEl.style.display = 'inline';
-        discountEl.textContent = `${discount}% OFF`;
-    } else {
-        originalPriceEl.parentElement.style.display = 'none';
-        discountEl.style.display = 'none';
-    }
-
-    // Description & Meta
-    document.getElementById('modal-description').textContent = item.short_description ? item.short_description[currentLang] : 'No description available.';
-
-    const deliveryLabel = document.querySelector('#modal-delivery').previousElementSibling;
-    if (item.unit === 'per hour' || item.unit === 'per visit' || item.unit === 'per work') {
-        deliveryLabel.textContent = currentLang === 'en' ? 'Arrival:' : 'পৌঁছাবে:';
-    } else {
-        deliveryLabel.textContent = currentLang === 'en' ? 'Delivery:' : 'ডেলিভারি:';
-    }
-    document.getElementById('modal-delivery').textContent = item.delivery_time ? item.delivery_time[currentLang] : 'Standard';
-
-    // Quantity & Add Button
-    updateModalQuantityUI();
-
-    const modal = document.getElementById('product-modal');
-    modal.classList.add('open');
-
-    // Update URL
-    if (item.url) {
-        history.pushState({ modalOpen: true, productId: item.id }, '', item.url);
-    }
-}
-
-function updateModalQuantity(change) {
-    const newQty = modalQuantity + change;
-    if (newQty >= 1) {
-        modalQuantity = newQty;
-        updateModalQuantityUI();
-    }
-}
-
-function updateModalQuantityUI() {
-    document.getElementById('modal-quantity').textContent = modalQuantity;
-    if (currentModalItem) {
-        document.getElementById('modal-total-price').textContent = currentModalItem.price * modalQuantity;
-    }
-}
-
-// Handle Browser Back Button
-window.addEventListener('popstate', (event) => {
-    const modal = document.getElementById('product-modal');
-    if (modal.classList.contains('open')) {
-        modal.classList.remove('open');
-        currentModalItem = null;
-    }
-});
-
-document.getElementById('modal-add-btn').addEventListener('click', () => {
-    if (currentModalItem) {
-        addToCart(currentModalItem.id, currentModalItem.name.en, currentModalItem.name.bn, currentModalItem.price, modalQuantity);
-        // Go back in history to close modal and revert URL
-        if (history.state && history.state.modalOpen) {
-            history.back();
-        } else {
-            document.getElementById('product-modal').classList.remove('open');
-        }
-    }
-});
-
-document.getElementById('close-product-modal').addEventListener('click', () => {
-    // Go back in history to close modal and revert URL
-    if (history.state && history.state.modalOpen) {
-        history.back();
-    } else {
-        document.getElementById('product-modal').classList.remove('open');
-    }
-});
-
-// Update addToCart to accept quantity
-function addToCart(id, nameEn, nameBn, price, quantity = 1) {
+// Update addToCart to accept model and brand
+function addToCart(id, nameEn, nameBn, price, quantity = 1, modelEn = null, modelBn = null, brandEn = null, brandBn = null) {
     const existing = cart.find(item => item.id === id);
     if (existing) {
         existing.quantity += quantity;
     } else {
-        cart.push({ id, name: { en: nameEn, bn: nameBn }, price, quantity: quantity });
+        const cartItem = {
+            id,
+            name: { en: nameEn, bn: nameBn },
+            price,
+            quantity: quantity
+        };
+
+        // Add model if provided
+        if (modelEn || modelBn) {
+            cartItem.model = { en: modelEn || modelBn, bn: modelBn || modelEn };
+        }
+
+        // Add brand if provided
+        if (brandEn || brandBn) {
+            cartItem.brand = { en: brandEn || brandBn, bn: brandBn || brandEn };
+        }
+
+        cart.push(cartItem);
     }
     saveCart();
     updateCartUI();
     toggleCart(); // Open cart to show feedback
 }
+
+// Global event listener for Add to Cart buttons
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.add-to-cart-btn');
+    if (btn) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const id = btn.dataset.id;
+        const nameEn = btn.dataset.nameEn;
+        const nameBn = btn.dataset.nameBn;
+        const price = parseFloat(btn.dataset.price);
+        const modelEn = btn.dataset.modelEn || null;
+        const modelBn = btn.dataset.modelBn || null;
+        const brandEn = btn.dataset.brandEn || null;
+        const brandBn = btn.dataset.brandBn || null;
+
+        if (id && nameEn && price) {
+            addToCart(id, nameEn, nameBn || nameEn, price, 1, modelEn, modelBn, brandEn, brandBn);
+        } else {
+            console.error('Missing data attributes on add-to-cart button', btn);
+        }
+    }
+});
 
 // Search Functionality
 let allProducts = [];
@@ -627,69 +644,55 @@ function renderProductCard(item) {
 
     if (isService) {
         return `
-        <div class="product-card profile-card" onclick="handleSearchResultClick('${item.id}', '${item.subcategoryId}')">
+        <a href="/category/${item.subcategoryId || item.categoryId}/product/${item.id}" class="product-card profile-card" style="text-decoration: none; color: inherit; display: block;">
             <div class="product-image profile-image">
                 ${item.image ? `<img src="/static/${item.image}" alt="${item.name.en}" class="card-img">` : `<div class="img-placeholder">${item.name.en[0]}</div>`}
             </div>
             <div class="product-info">
                 <h3 class="item-name">${item.name[currentLang]}</h3>
+                ${item.brand ? `<p class="item-brand" style="font-size: 0.85rem; color: #666; margin-bottom: 0.2rem;">${item.brand[currentLang]}</p>` : ''}
                 <div class="profile-details">
                     <p><strong>${currentLang === 'en' ? 'Rating' : 'রেটিং'}</strong>: ⭐ ${item.rating || 'N/A'}</p>
                 </div>
                 <p class="price">৳${item.price}</p>
                 <button class="add-to-cart-btn hire-btn"
-                    onclick="event.stopPropagation(); addToCart('${item.id}', '${item.name.en}', '${item.name.bn}', ${item.price})">
+                    data-id="${item.id}"
+                    data-name-en="${item.name.en}"
+                    data-name-bn="${item.name.bn}"
+                    data-price="${item.price}">
                     ${currentLang === 'en' ? 'Hire Now' : 'হায়ার করুন'}
                 </button>
             </div>
-        </div>`;
+        </a>`;
     } else {
         return `
-        <div class="product-card" onclick="handleSearchResultClick('${item.id}', '${item.subcategoryId}')">
+        <a href="/category/${item.subcategoryId || item.categoryId}/product/${item.id}" class="product-card" style="text-decoration: none; color: inherit; display: block;">
             <div class="product-image">
                 ${item.image ? `<img src="/static/${item.image}" alt="${item.name.en}" class="card-img">` : `<div class="img-placeholder">${item.name.en[0]}</div>`}
                 ${item.original_price && item.original_price > item.price ? '<span class="card-discount-badge">Sale</span>' : ''}
             </div>
             <div class="product-info">
                 <h3 class="item-name">${item.name[currentLang]}</h3>
+                ${item.brand ? `<p class="item-brand" style="font-size: 0.85rem; color: #666; margin-bottom: 0.2rem;">${item.brand[currentLang]}</p>` : ''}
                 <div class="card-rating">
                     <span class="stars">★</span> ${item.rating || 0} <span class="review-count">(${item.reviews_count || 0})</span>
                 </div>
-                <p class="price">৳${item.price}</p>
+
+                <div class="price-row">
+                    <p class="price">৳${item.price}</p>
+                    ${item.original_price ? `<p class="original-price-sm">৳${item.original_price}</p>` : ''}
+                </div>
+
                 <button class="add-to-cart-btn"
-                    onclick="event.stopPropagation(); addToCart('${item.id}', '${item.name.en}', '${item.name.bn}', ${item.price})">
+                    data-id="${item.id}"
+                    data-name-en="${item.name.en}"
+                    data-name-bn="${item.name.bn}"
+                    data-price="${item.price}">
                     ${currentLang === 'en' ? 'Add to Cart' : 'কার্টে যোগ করুন'}
                 </button>
             </div>
-        </div>`;
+        </a>`;
     }
 }
 
-function handleSearchResultClick(id, subcategoryId) {
-    // Check if we are already on the correct subcategory page
-    const currentPath = window.location.pathname;
-    const targetPath = `/category/${subcategoryId}`;
 
-    if (currentPath === targetPath) {
-        openProductDetails(id);
-    } else {
-        // Navigate to the subcategory page with a query param to open the modal
-        window.location.href = `${targetPath}?open_modal=${id}`;
-    }
-
-    document.getElementById('product-search').value = ''; // Clear search
-    document.getElementById('live-search-results').classList.remove('active');
-}
-
-// Auto-open modal if query param exists
-document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const openModalId = urlParams.get('open_modal');
-
-    if (openModalId) {
-        // We need to wait for appData to be loaded. 
-        // Since fetch is async, we can poll or use a custom event. 
-        // For simplicity, we'll check in the initApp or after fetch.
-        // Actually, let's hook into the existing fetch promise chain in the main event listener.
-    }
-});

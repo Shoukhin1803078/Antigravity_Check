@@ -1,3 +1,4 @@
+from typing import Optional
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -54,12 +55,54 @@ async def read_category(request: Request, category_id: str):
 
     return templates.TemplateResponse("category.html", {"request": request, "category": category, "data": data})
 
+@app.get("/category/{category_id}/product/{product_id}")
+async def read_product(request: Request, category_id: str, product_id: str):
+    data = load_data()
+    
+    # Find category
+    category = next((c for c in data["categories"] if c["id"] == category_id), None)
+    if not category:
+        # Check subcategories if not found in main categories
+        for cat in data["categories"]:
+            if "subcategories" in cat:
+                sub = next((s for s in cat["subcategories"] if s["id"] == category_id), None)
+                if sub:
+                    category = sub
+                    break
+    
+    if not category:
+        raise HTTPException(status_code=404, detail="Category not found")
+
+    # Find product
+    product = None
+    if "items" in category:
+        product = next((i for i in category["items"] if i["id"] == product_id), None)
+    
+    if not product:
+        raise HTTPException(status_code=404, detail="Product not found")
+
+    # Determine current language (simple logic for now, can be improved)
+    # In a real app, this might come from a cookie or query param
+    # For now, we'll pass 'en' as default, but the template can use JS to switch
+    # However, since we are rendering server-side, we need to know the lang.
+    # Let's check cookies or default to 'en'
+    current_lang = request.cookies.get("lang", "en")
+
+    return templates.TemplateResponse("product_detail.html", {
+        "request": request, 
+        "product": product, 
+        "category": category, 
+        "data": data,
+        "current_lang": current_lang
+    })
+
+
 class OrderPayload(BaseModel):
     name: str
     phone: str
-    email: str | None = None
+    email: Optional[str] = None
     address: str
-    message: str | None = None
+    message: Optional[str] = None
     cart: list
 
 @app.post("/send-email")
@@ -70,7 +113,22 @@ async def send_email(order: OrderPayload):
     for item in order.cart:
         item_total = item['price'] * item['quantity']
         total_price += item_total
-        cart_details += f"- {item['name']['en']} (x{item['quantity']}): ৳{item_total}\n"
+        
+        # Build detailed item info
+        item_info = f"- {item['name']['en']} (x{item['quantity']}): ৳{item_total}\n"
+        item_info += f"  Item ID: {item['id']}\n"
+        
+        # Add brand if available
+        if 'brand' in item and item['brand']:
+            brand = item['brand'].get('en', 'N/A')
+            item_info += f"  Brand: {brand}\n"
+        
+        # Add model if available
+        if 'model' in item and item['model']:
+            model = item['model'].get('en', 'N/A')
+            item_info += f"  Model: {model}\n"
+        
+        cart_details += item_info + "\n"
     
     full_message = f"""
     New Order Received!
