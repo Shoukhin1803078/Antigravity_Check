@@ -107,7 +107,13 @@
                             "long_description": {
                                 "en": "<h3>Product Details</h3>\n            <p>Safe and durable LP gas cylinder for home cooking.</p>\n            <p>This 12kg Gas Cylinder is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
                                 "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>রান্নার জন্য নিরাপদ এবং টেকসই এলপি গ্যাস সিলিন্ডার।</p>\n            <p>এই ১২ কেজি গ্যাস সিলিন্ডার আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
-                            }
+                            },
+                            "practical_images": [
+                                "images/homeservice/cylinder/cyl1_1.jpeg",
+                                "images/homeservice/cylinder/cyl1_2.jpeg",
+                                "images/homeservice/cylinder/cyl1_3.jpeg",
+                               "images/homeservice/cylinder/cyl1_4.jpeg"
+                            ]
                         },
                         {
                             "id": "cyl_2",
@@ -456,12 +462,18 @@
                                 "en": "High speed ceiling fan with 5 star energy rating.",
                                 "bn": "৫ স্টার এনার্জি রেটিং সহ হাই স্পিড সিলিং ফ্যান।"
                             },
-                            "image": "images/homeservice/home_accessories/fan.jpeg",
+                            "image": "images/home_accessories/fan/fan.webp",
                             "url": "/category/fan/product/fan_1",
                             "long_description": {
                                 "en": "<h3>Product Details</h3>\n            <p>High speed ceiling fan with 5 star energy rating.</p>\n            <p>This Ceiling Fan is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
                                 "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>৫ স্টার এনার্জি রেটিং সহ হাই স্পিড সিলিং ফ্যান।</p>\n            <p>এই সিলিং ফ্যান আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
-                            }
+                            },
+                            "practical_images": [
+                                "images/home_accessories/fan/fan1_1.jpg",
+                                "images/home_accessories/fan/fan1_2.jpeg",
+                                "images/home_accessories/fan/fan1_3.jpeg",
+                                "images/home_accessories/fan/fan1_4.jpeg"
+                            ]
                         },
                         {
                             "id": "fan_2",
@@ -559,6 +571,80 @@
                             "long_description": {
                                 "en": "<h3>Product Details</h3>\n            <p>Long lasting tube light for room illumination.</p>\n            <p>This Tube Light is a high-quality product designed to meet your needs. It offers excellent performance and durability.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Premium quality materials</li>\n                <li>Long-lasting durability</li>\n                <li>Excellent performance</li>\n                <li>Value for money</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Using this product will enhance your daily life with its superior functionality and reliability.</p>",
                                 "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>ঘরের আলোর জন্য দীর্ঘস্থায়ী টিউব লাইট।</p>\n            <p>এই টিউব লাইট আপনার প্রয়োজন মেটানোর জন্য ডিজাইন করা একটি উচ্চ-মানের পণ্য। এটি চমৎকার কর্মক্ষমতা এবং স্থায়িত্ব প্রদান করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>প্রিমিয়াম মানের উপকরণ</li>\n                <li>দীর্ঘস্থায়ী স্থায়িত্ব</li>\n                <li>চমৎকার কর্মক্ষমতা</li>\n                <li>টাকার সঠিক মূল্য</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>এই পণ্যটি ব্যবহার করা আপনার দৈনন্দিন জীবনকে এর উন্নত কার্যকারিতা এবং নির্ভরযোগ্যতার সাথে উন্নত করবে।</p>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "kitchen_item",
+                    "name": {
+                        "en": "Kitchen Items",
+                        "bn": "কিচেন আইটেম"
+                    },
+                    "items": [
+                        {
+                            "id": "kitchen_1",
+                            "name": {
+                                "en": "Air Fryer",
+                                "bn": "এয়ার ফ্রায়ার"
+                            },
+                            "price": 6500,
+                            "original_price": 7200,
+                            "rating": 4.7,
+                            "reviews_count": 89,
+                            "brand": {
+                                "en": "Philips",
+                                "bn": "ফিলিপস"
+                            },
+                            "model_name": {
+                                "en": "PHL-AF-3000",
+                                "bn": "পিএইচএল-এএফ-৩০০০"
+                            },
+                            "delivery_time": {
+                                "en": "3 Days",
+                                "bn": "৩ দিন"
+                            },
+                            "short_description": {
+                                "en": "Healthy oil-free cooking with fast air circulation technology.",
+                                "bn": "ফাস্ট এয়ার সার্কুলেশন প্রযুক্তির মাধ্যমে স্বাস্থ্যকর তেলবিহীন রান্না।"
+                            },
+                            "image": "images/kitchen/air_fryer.jpg",
+                            "url": "/category/kitchen-item/product/kitchen_1",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>Healthy oil-free cooking with fast air circulation technology.</p>\n            <p>This Air Fryer is designed for modern kitchens, offering crisp frying with minimal oil.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>Rapid air technology</li>\n                <li>Non-stick basket</li>\n                <li>Energy efficient</li>\n                <li>Easy to clean</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Enjoy healthier meals with faster cooking and easy maintenance.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>ফাস্ট এয়ার সার্কুলেশন প্রযুক্তির মাধ্যমে স্বাস্থ্যকর তেলবিহীন রান্না।</p>\n            <p>এই এয়ার ফ্রায়ার আধুনিক কিচেনের জন্য ডিজাইন করা হয়েছে, যা কম তেলে ক্রিসপি রান্না নিশ্চিত করে।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>র‌্যাপিড এয়ার প্রযুক্তি</li>\n                <li>নন-স্টিক বাস্কেট</li>\n                <li>এনার্জি সাশ্রয়ী</li>\n                <li>সহজে পরিষ্কার করা যায়</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>স্বাস্থ্যকর খাবার দ্রুত রান্না এবং সহজ রক্ষণাবেক্ষণের সুবিধা উপভোগ করুন।</p>"
+                            }
+                        },
+                        {
+                            "id": "kitchen_2",
+                            "name": {
+                                "en": "Blender",
+                                "bn": "ব্লেন্ডার"
+                            },
+                            "price": 1800,
+                            "rating": 4.3,
+                            "reviews_count": 41,
+                            "brand": {
+                                "en": "Vision",
+                                "bn": "ভিশন"
+                            },
+                            "model_name": {
+                                "en": "VSN-BL-200",
+                                "bn": "ভিএসএন-বিএল-২০০"
+                            },
+                            "delivery_time": {
+                                "en": "2 Days",
+                                "bn": "২ দিন"
+                            },
+                            "short_description": {
+                                "en": "High-speed blender perfect for smoothies and spices.",
+                                "bn": "স্মুথি ও মসলা মিক্সিংয়ের জন্য হাই-স্পিড ব্লেন্ডার।"
+                            },
+                            "image": "images/kitchen/blender.jpg",
+                            "url": "/category/kitchen-item/product/kitchen_2",
+                            "long_description": {
+                                "en": "<h3>Product Details</h3>\n            <p>High-speed blender perfect for smoothies and spices.</p>\n            <p>This Blender is durable, powerful, and suitable for daily use.</p>\n            \n            <h3>Key Features</h3>\n            <ul>\n                <li>750W powerful motor</li>\n                <li>Stainless steel blades</li>\n                <li>3 speed control</li>\n                <li>Easy to clean</li>\n            </ul>\n            \n            <h3>Advantages</h3>\n            <p>Ideal for making smoothies, purees, and grinding spices effortlessly.</p>",
+                                "bn": "<h3>পণ্যের বিবরণ</h3>\n            <p>স্মুথি ও মসলা মিক্সিংয়ের জন্য হাই-স্পিড ব্লেন্ডার।</p>\n            <p>এই ব্লেন্ডারটি টেকসই, শক্তিশালী এবং দৈনন্দিন ব্যবহারের জন্য উপযোগী।</p>\n            \n            <h3>মূল বৈশিষ্ট্য</h3>\n            <ul>\n                <li>৭৫০W শক্তিশালী মোটর</li>\n                <li>স্টেইনলেস স্টিল ব্লেড</li>\n                <li>৩ স্পিড কন্ট্রোল</li>\n                <li>সহজে পরিষ্কার করা যায়</li>\n            </ul>\n            \n            <h3>সুবিধাসমূহ</h3>\n            <p>স্মুথি, পিউরি এবং মসলা সহজেই তৈরি করার জন্য আদর্শ।</p>"
                             }
                         }
                     ]

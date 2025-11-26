@@ -800,147 +800,147 @@ body {
     .product-image {
         height: 100px;
     }
+}
 
-    .img-placeholder {
-        font-size: 2rem;
-    }
+.img-placeholder {
+    font-size: 2rem;
+}
 
-    .product-info {
-        padding: 0.6rem;
-    }
+.product-info {
+    padding: 0.6rem;
+}
 
-    .item-name {
-        font-size: 0.95rem;
-        margin-bottom: 0.3rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.item-name {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-    .price {
-        font-size: 0.95rem;
-        margin-bottom: 0.5rem;
-    }
+.price {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
 
-    .add-to-cart-btn {
-        padding: 0.5rem;
-        font-size: 0.85rem;
-    }
+.add-to-cart-btn {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+}
 
-    /* Profile Card Mobile */
-    .profile-image {
-        width: 80px;
-        height: 80px;
-        margin: 1rem auto 0;
-    }
+/* Profile Card Mobile */
+.profile-image {
+    width: 80px;
+    height: 80px;
+    margin: 1rem auto 0;
+}
 
-    .profile-details {
-        font-size: 0.8rem;
-    }
+.profile-details {
+    font-size: 0.8rem;
+}
 
-    /* Modal Mobile */
-    .modal-content {
-        padding: 0.8rem;
-        /* Reduced padding */
-        width: 90%;
-        max-width: 320px;
-        /* Reduced max-width */
-        max-height: 75vh;
-        /* Reduced max-height */
-        overflow-y: auto;
-        margin: auto;
-        border-radius: 12px;
-    }
+/* Modal Mobile */
+.modal-content {
+    padding: 0.8rem;
+    /* Reduced padding */
+    width: 90%;
+    max-width: 320px;
+    /* Reduced max-width */
+    max-height: 75vh;
+    /* Reduced max-height */
+    overflow-y: auto;
+    margin: auto;
+    border-radius: 12px;
+}
 
-    .modal-image-section {
-        min-height: 140px;
-        /* Reduced image height */
-        margin-bottom: 0.5rem;
-        border-radius: 8px;
-    }
+.modal-image-section {
+    min-height: 140px;
+    /* Reduced image height */
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+}
 
-    .img-placeholder-large {
-        font-size: 2.5rem;
-    }
+.img-placeholder-large {
+    font-size: 2.5rem;
+}
 
-    .modal-info-section {
-        padding: 0;
-    }
+.modal-info-section {
+    padding: 0;
+}
 
-    .brand-badge {
-        font-size: 0.7rem;
-        padding: 0.1rem 0.5rem;
-    }
+.brand-badge {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.5rem;
+}
 
-    #modal-title {
-        font-size: 1.1rem;
-        /* Reduced title size */
-        margin: 0.3rem 0;
-        line-height: 1.2;
-    }
+#modal-title {
+    font-size: 1.1rem;
+    /* Reduced title size */
+    margin: 0.3rem 0;
+    line-height: 1.2;
+}
 
-    .modal-rating {
-        margin-bottom: 0.5rem;
-        font-size: 0.8rem;
-    }
+.modal-rating {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
 
-    .modal-price-section {
-        margin-bottom: 0.5rem;
-    }
+.modal-price-section {
+    margin-bottom: 0.5rem;
+}
 
-    .current-price {
-        font-size: 1.2rem;
-        /* Reduced price size */
-    }
+.current-price {
+    font-size: 1.2rem;
+    /* Reduced price size */
+}
 
-    .modal-description {
-        font-size: 0.8rem;
-        line-height: 1.4;
-        margin-bottom: 0.8rem;
-        max-height: 80px;
-        /* Reduced description height */
-    }
+.modal-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    max-height: 80px;
+    /* Reduced description height */
+}
 
-    .modal-meta {
-        font-size: 0.75rem;
-        padding: 0.5rem;
-        margin-bottom: 0.8rem;
-    }
+.modal-meta {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+}
 
-    .quantity-control {
-        margin-bottom: 0.8rem;
-    }
+.quantity-control {
+    margin-bottom: 0.8rem;
+}
 
-    .qty-btn {
-        width: 30px;
-        height: 30px;
-        font-size: 1rem;
-    }
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+}
 
-    #modal-quantity {
-        font-size: 1rem;
-        width: 35px;
-    }
+#modal-quantity {
+    font-size: 1rem;
+    width: 35px;
+}
 
-    .modal-add-btn {
-        padding: 0.5rem;
-        /* Further reduced padding */
-        font-size: 0.85rem;
-        /* Smaller font */
-        margin-top: 0.5rem;
-        border-radius: 8px;
-        /* Slightly smaller radius */
-        position: sticky;
-        bottom: 0;
-        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 10;
-        background: var(--secondary);
-    }
+.modal-add-btn {
+    padding: 0.5rem;
+    /* Further reduced padding */
+    font-size: 0.85rem;
+    /* Smaller font */
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    /* Slightly smaller radius */
+    position: sticky;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    background: var(--secondary);
 }
 
 /* Search Bar */
 .search-container {
-    width: 90%;
+    width: 70%;
     max-width: 600px;
     margin: 1rem auto;
     position: relative;
@@ -955,6 +955,7 @@ body {
     outline: none;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 #product-search:focus {
@@ -1317,4 +1318,54 @@ body {
 
 .product-card:hover .card-img {
     transform: scale(1.05);
+}
+
+/* Practical Images Slider */
+.practical-images-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.practical-images-slider {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) #f0f0f0;
+}
+
+.practical-images-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.practical-images-slider::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.practical-images-slider::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+
+.practical-img-wrapper {
+    flex: 0 0 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.practical-img-wrapper:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.practical-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
